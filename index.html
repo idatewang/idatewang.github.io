@@ -18,7 +18,7 @@
 var password;
 var correctpassword="20030710"
 password=prompt('Please enter in the password to view this page:','');
-if (password==corroctpassword)
+if (password==correctpassword)
   alert ('Password is correct. Click ok to enter...');
 else
 {
@@ -27,19 +27,15 @@ else
 </script>
 
 
-<audio id="audio" controls="muted" style="width: 100%;"><source src="beihaipai.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
 
-  <script type="text/javascript">
-function autoplay(){
-    var r =confirm("Would You Like To AutoPlay Music?");
-    if (r == true) {
-        document.getElementById("audio").play();
-    }
-  }
+<audio id="audio" muted autoplay><source src="beihaipai.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+<button id="unmuteButton"></button>
+
+<script>
+  unmuteButton.addEventListener('click', function() {
+    video.muted = false;
+  });
 </script>
-<script>autoplay();</script> 
-
-
 
 
   <div class="container">
