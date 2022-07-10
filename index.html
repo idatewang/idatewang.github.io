@@ -16,7 +16,7 @@
 
 <script type="text/javascript">
 var password;
-var correctpassword="20030710"
+var correctpassword="20030710";
 password=prompt('Please enter in the password to view this page:','');
 if (password==correctpassword)
   alert ('Password is correct. Click ok to enter...');
@@ -29,11 +29,10 @@ else
 
 
 <audio id="audio" muted autoplay><source src="beihaipai.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
-<button id="unmuteButton"></button>
-
+<button id="unmuteButton" type="button" class="block">Click to unmute BGM</button>
 <script>
   unmuteButton.addEventListener('click', function() {
-    video.muted = false;
+    audio.muted = false;
   });
 </script>
 
