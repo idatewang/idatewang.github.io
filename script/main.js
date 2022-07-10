@@ -4,7 +4,7 @@ const fetchData = () => {
   unmuteButton.addEventListener('click', function() {
     video.muted = false;
   });
-  
+
   fetch("customize.json")
     .then(data => data.json())
     .then(data => {
@@ -31,6 +31,9 @@ const fetchData = () => {
 
 // Animation Timeline
 const animationTimeline = () => {
+//   const music = new Audio('audio/biehaipa.mp3');
+// music.play();
+
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
