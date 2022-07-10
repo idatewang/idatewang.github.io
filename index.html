@@ -14,7 +14,7 @@
 <body>
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var password;
 var correctpassword="20030710";
 password=prompt('小花同学，请输入密码:','');
@@ -26,13 +26,25 @@ else
   window.location="http://www.google.com";
 }
 </script>
-
+ -->
 
 <div>
-  <audio id= "myAudio" controls autoplay>
+  <audio id= "myAudio" controls>
   <source src="audio/biehaipa.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+<p>Click the button to find out if the audio automatically started to play as soon as it was ready.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myAudio").autoplay;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 </div>
 
 
