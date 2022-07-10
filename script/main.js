@@ -310,7 +310,12 @@ const animationTimeline = () => {
   const bgmbt = document.getElementById("bgm");
   bgmbt.addEventListener("click",() => {
     window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
-  };
+  });
+
+  const bgmb = document.getElementById("bgm_B");
+  bgmb.addEventListener("click",() => {
+    window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
+  });
 
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
