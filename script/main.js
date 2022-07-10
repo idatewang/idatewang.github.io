@@ -1,17 +1,5 @@
 // Import the data to customize and insert them into page
 const fetchData = () => {
-
-
-
-  const bgmbt = document.getElementById("bgm");
-  bgmbt.addEventListener("click",() => {
-    window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
-  });
-
-
-
-
-
   fetch("customize.json")
     .then(data => data.json())
     .then(data => {
@@ -38,8 +26,11 @@ const fetchData = () => {
 
 // Animation Timeline
 const animationTimeline = () => {
-//   const music = new Audio('audio/biehaipa.mp3');
-// music.play();
+  const bgmb = document.getElementById("bgm");
+  bgmb.addEventListener("click",() => {
+    window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
+  });
+
 
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
