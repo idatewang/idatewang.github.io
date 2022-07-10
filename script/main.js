@@ -282,15 +282,15 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1"
     })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-    .to(
-      ".last-smile",
-      0.5,
-      {
-        rotation: 100
-      },
-      "+=1"
-    );
+    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2);
+    // .to(
+    //   ".last-smile",
+    //   0.5,
+    //   {
+    //     rotation: 200
+    //   },
+    //   "+=1"
+    // );
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
