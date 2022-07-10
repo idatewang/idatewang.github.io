@@ -26,8 +26,9 @@ const fetchData = () => {
 
 // Animation Timeline
 const animationTimeline = () => {
-  document.getElementById('myAudio').play();
-  // Spit chars that needs to be animated individually
+unmuteButton.addEventListener('click', function() {
+    myAudio.muted = false;
+  });  // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
