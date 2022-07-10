@@ -12,8 +12,17 @@
 </head>
 
 <body>
-  <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-<audio id="player" autoplay loop>
+  <script type="text/javascript">
+function autoplay(){
+    var r =confirm("Would You Like To AutoPlay Music?");
+    if (r == true) {
+        document.getElementById("audio").play();
+    }
+  }
+</script>
+<script>autoplay();</script> 
+<!--   <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+ --><audio id="player" autoplay loop>
     <source src="audio/beihaipai.mp3" type="audio/mp3">
 </audio>
 
