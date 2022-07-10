@@ -124,9 +124,9 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 0.5%;
+  width: 400px;  
+  height: 150px;  
+
   /* transform: scale(0.1); */
 }
 
@@ -233,7 +233,7 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-height: 1000px) {
+/*@media screen and (max-height: 1000px) {
   .six .hat {
     left: 40%;
   }
@@ -296,4 +296,4 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
-}
+}*/
