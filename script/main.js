@@ -307,6 +307,11 @@ const animationTimeline = () => {
   // tl.timeScale(2);
 
   // Restart Animation on click
+  const bgmbt = document.getElementById("bgm");
+  bgmbt.addEventListener("click",() => {
+    window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
+  };
+
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
     tl.restart();
