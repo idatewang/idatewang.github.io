@@ -26,11 +26,6 @@ const fetchData = () => {
 
 // Animation Timeline
 const animationTimeline = () => {
-  const bgmb = document.getElementById("bgm");
-  bgmb.addEventListener("click",() => {
-    window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
-  });
-
 
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
