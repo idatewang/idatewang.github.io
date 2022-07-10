@@ -20,8 +20,11 @@ var correctpassword="20030710";
 password=prompt('小花同学，请输入密码:','');
 if (password==correctpassword)
 {
-  alert ('欢迎你！傅小花同学~');
-  var myWindow = window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
+  if (confirm("欢迎你！傅小花同学~")) {
+    var myWindow = window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
+  } else {
+    var myWindow = window.open("https://idatewang.github.io/beihaipai.mp3", "_blank", "width=200,height=100");
+  }
 }
 else
 {
